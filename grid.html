@@ -11,19 +11,29 @@
         background-color: white
         padding: 10px 20px;
         border: 1px solid #ccc;
+    },
+    .nav a:hover {
+        color: green;
+        font-weight: bold;
     }
     .navbar {
         display: flex;
-      float : right;
+      float : relative;
         gap: 20px;
         margin-left: auto;
         padding: 2px;
+        padding-top: 30px;
+    }
+    .navbar a:hover {
+        color: green;
+        font-weight: bold;
     }
     a {
         text-decoration: none;
         color: #333;
         font-size: 15px;
         padding-top:20px;
+    
     }
     .content {
         display: grid;
@@ -38,21 +48,13 @@
     }
     .text1 {
         grid-template-columns: 1fr;
-        font-size: 24px;
-        font-weight: bold;
+        font-size: 30px;
+        /* font-weight: bold; */
         color: #333;
         text-align: left;
         margin-bottom: 10px;
         padding-top: 5rem;
         margin-left: 2rem;
-    
-      
-    }
-    .text2 {
-        font-size: 18px;
-        color: #555;
-        text-align: left;
-        padding-left: 10rem;
     }
     .image {
         grid-template-columns: 1fr;
@@ -63,31 +65,126 @@
         height: 500px;
         padding-left: 20rem;
     }
+    .programs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 50px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        margin-top: 10px;
+        position: relative;
+    }
+    .programs:hover.dropdown-content {
+        display: block;
+    }
+    {
+        background-color: #e0e0e0;
+    }
+    .apply
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 150px;
+        height: 50px;
+        color: red;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .apply:hover {
+        background-color: #e0e0e0;
+        color: green;
+    }
 </style>
 <body>
     <div class="nav">
     <h1>
-        <span style="font: weight 800px;; color: red; font-style: oblique;">Zindua</span>
+        <span style="font: weight 800px;; color: red; font-style: oblique; font-size: 40px; padding-left: 1rem;">Zindua</span>
         <br>
-        <span style="font-style: oblique; font-weight: 300; font-size: 22px;">School</span>
+        <span style="font-style: oblique; font-weight: 300; font-size: 22px; padding-left: 1rem;">School</span>
     </h1>
     <div class="navbar">
     <nav class="navbar">
-    <a href="Programs.html">Programs</a>
-    <a href="Financing.html">Financing Options</a>
-    <a href="Resources.html">Resources</a>
-       <a href="More.html">More</a>
-    <a href="Login.html">Login</a>
-    <a href="Apply.html">Apply Today</a>
+   <div class="Programs">
+    <label for="Programs">Programs</label>
+    <br>
+    <select name="Programs" id="Programs">
+    <option value="Data Programs">Data Programs</option>
+    <option value="Software Programs">Software Programs</option>
+    <option value="Specialization Programs">Specialization Programs</option>
+    <option value="Programs by your level">Programs by your Level</option>
+    <option value="Short Tech Courses">Short Tech Courses</option>
+    <option value="Join our free courses">Join our Free Courses</option>
+   </select>
+   </div>
+   <div class="Finance">
+    <label for="Financing" style="border: none; overflow: hidden; transition: 0.3s ease;"></label>
+    <br>
+    <select name="Financial Plan" id="Financial Plans">
+    <option value="Financing Options">Financing Plans</option>
+    <option value="Flexible Instalments">Programs Pricing Options</option>
+    <option value="Lipa Mdogo Mdogo">Flexi (Lipa Mdogo Mdogo)</option>
+    <option value="Income-Share Agreements">Income-Share Agreements</option>
+    <option value="Estimate your fees">Estimate your Fees</option>
+    </select>
+   </div>
+   <div class="Resources">
+    <label for="Resources">Resources</label>
+    <br>
+    <select name="Resources" id="Resources">
+    <option value="Blog">Blog Publication</option>
+    <option value="Events">Discover Masterclass</option>
+    <option value="FAQs">FAQs</option>
+    <option value="Student Stories">Events & Webnars</option>
+    </select>
+   </div>
+    <div class="More">
+    <label for="More">More</label>
+    <br>
+    <select name="More" id="More">
+    <option value="About Us">About Us</option>
+    <option value="Contact Us">Contact Us</option>
+    <option value="Careers">Join our team</option>
+    </select>
+    </div>
+    <div class="Login">
+    <label for="Login">Login</label>
+    <br>
+    <select name="Login" id="Login">
+    <option value="Login">Student Login</option>
+    <option value="Apply">Affiliate Login</option>
+    </select>   
+    </div>
+    <div class="apply">
+        <button style="background-color: red; border:none;width: 180px; height: 50px; font-weight: medium;font-size: 18px; color: white;">Apply Today</button>
+    </div>
+    </nav>
+
+    <!-- <Select name="Software Programs">Software Programs</Select> -->
+    <!-- <select name="Specialization Programs">Specialization Programs</select> -->
+    <!-- <select name="Programs by your level">Programs by your Level</select> -->
+    <!-- <select name="Short Tech Courses">Short Tech Courses</select> -->
+    <!-- <select name="Join our free courses">Join our Free Courses</select> -->
+   <!-- </div> -->
+    <!-- <a href="Programs.html">Programs</a> -->
+    <!-- <a href="Financing.html">Financing Options</a> -->
+    <!-- <a href="Resources.html">Resources</a> -->
+       <!-- <a href="More.html">More</a> -->
+    <!-- <a href="Login.html">Login</a> -->
+    <!-- <a href="Apply.html">Apply Today</a> -->
     </nav>
     </div>
     </div>
  <div class="content">
     <div class ="text1">
-        <span>Financing options that can’t be matched,</span>
-        <span style="color: red;"> flexible instalments and learn-now-pay-later plans </span>
+        <span style="font-weight: bold;">Financing options that can’t be matched,</span>
+        <span style="color: red; font-weight: bold;"> flexible instalments and learn-now-pay-later plans </span>
    
-    <p >We are known for the most flexible financing options. We offer flexible instalments as well as Lipa Mdogo Mdogo and Income-Share Agreements as our deferred tuition financing options.</p>
+    <p style="font-size: medium; font-size: 20px;">We are known for the <b>most flexible financing options.</b>  We offer flexible instalments as well as <b>Lipa Mdogo Mdogo </b> and <b>Income-Share Agreements </b> as our deferred tuition financing options.</p>
 </div>
 
     <div class="image">
