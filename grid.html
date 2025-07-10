@@ -4,8 +4,97 @@
     <meta charset="UTF-8" />
     <title>Basic Styling</title>
 </head>
+<style>
+    .nav {
+        display: flex;
+        text-decoration: none;
+        background-color: white
+        padding: 10px 20px;
+        border: 1px solid #ccc;
+    }
+    .navbar {
+        display: flex;
+      float : right;
+        gap: 20px;
+        margin-left: auto;
+        padding: 2px;
+    }
+    a {
+        text-decoration: none;
+        color: #333;
+        font-size: 15px;
+        padding-top:20px;
+    }
+    .content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 10%;
+        gap: 20px;
+        width: 100%;
+        height: 10%;
+        padding-left: 0rem;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+    }
+    .text1 {
+        grid-template-columns: 1fr;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        text-align: left;
+        margin-bottom: 10px;
+        padding-top: 5rem;
+        margin-left: 2rem;
+    
+      
+    }
+    .text2 {
+        font-size: 18px;
+        color: #555;
+        text-align: left;
+        padding-left: 10rem;
+    }
+    .image {
+        grid-template-columns: 1fr;
+        display: flex;
+        justify-content: right;
+        align-items: right;
+        width: 300px;
+        height: 500px;
+        padding-left: 20rem;
+    }
+</style>
 <body>
-    <h1>Zindua School</h1>
+    <div class="nav">
+    <h1>
+        <span style="font: weight 800px;; color: red; font-style: oblique;">Zindua</span>
+        <br>
+        <span style="font-style: oblique; font-weight: 300; font-size: 22px;">School</span>
+    </h1>
+    <div class="navbar">
+    <nav class="navbar">
+    <a href="Programs.html">Programs</a>
+    <a href="Financing.html">Financing Options</a>
+    <a href="Resources.html">Resources</a>
+       <a href="More.html">More</a>
+    <a href="Login.html">Login</a>
+    <a href="Apply.html">Apply Today</a>
+    </nav>
+    </div>
+    </div>
+ <div class="content">
+    <div class ="text1">
+        <span>Financing options that can’t be matched,</span>
+        <span style="color: red;"> flexible instalments and learn-now-pay-later plans </span>
+   
+    <p >We are known for the most flexible financing options. We offer flexible instalments as well as Lipa Mdogo Mdogo and Income-Share Agreements as our deferred tuition financing options.</p>
+</div>
+
+    <div class="image">
+    <img src="Reading.jpg" alt="Reading">
+    </div>
+ </div>
+    
     
 </body>
 </html>
