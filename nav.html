@@ -72,7 +72,7 @@
         button:hover {
           background-color: teal;
         }
-        .button1:hover {
+        button1:hover {
             background-color: teal;
         }
         a:hover {
@@ -108,6 +108,20 @@
         height: 500px;
         padding-left: 20rem;
     }
+    .paragraph-grid {
+  display: grid;
+  grid-template-columns: repeat(7) 1fr; 
+  gap: 5px;
+  padding: 10px;
+}
+
+.paragraph-grid p {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+    
     </style>
   </head>
   <body>
@@ -203,6 +217,41 @@
     <div class="image">
     <img src="Reading.jpg" alt="Reading">
     </div>
+ </div>
+ <div style="text-align: center;">
+    <h1 style="padding-bottom: 0%;">Pricing based on Program</h1>
+    Choose your program below to see the pricing options:
+    <br>
+    <button style="width: 300px;">Software Eng. & Data Science</button>
+    <button  style="width: 350px;">Data Analytics & Front End Dev</button>
+    <button  style="width: 350px;">DevOps & Data Engineering</button>
+    <h1 style="color: red; text-align: left;">Pricing for Software Engineering & Data Science Core programs</h1>
+    <p style="text-align: left; padding: 0px;">These are the financing options for our 5-module programs that run for 4 months full-time or 7 months part-time:</p>
+ </div>
+ <div class="paragraph-grid" style="font-size: 20px;">
+    <p><span><b>One-time Upfront Payment</b></span>
+        <br>
+<span style="font-size: 16px;">Pay KES 125K one-time fee (This is the cheapest financing option)</span></p>
+<p><span><b>Pay in TWO Instalments</b></span> <br>
+<span style="font-size: 16px;">Pay KES 65K every 2 months for 2 total instalments; totals to KES 130K.</span></p>
+<p><span><b>Pay in THREE Instalments </b></span> <br>
+<span style="font-size: 16px;">KES 45K every 7 weeks for 3 total instalments; totals to KES 135K.</span></p>
+<p>
+    <span><b>Pay in FOUR Instalments</b></span><br>
+    <span style="font-size: 16px;">Pay KES 35K every 5 weeks for 4 total instalments; totals to KES 140K.</span>
+</p>
+<p>
+    <span><b>Pay in FIVE Instalments</b></span><br>
+    <span style="font-size: 16px;">Pay KES 29K monthly for 5 monthly instalments; totals to KES 145K</span>
+</p>
+<p>
+    <span><b>Flexi Payment Plan (Lipa mdogo mdogo)</b></span><br>
+    <span style="font-size: 16px;">Pay KES 13,750 monthly for 12 months. This financing will require the student/parent (whoever will be making payments) to go through a credit vetting process by Chaptr Global. This option is ideal for students who are not eligible for an income-share agreement but still cannot afford the instalment fee plans.</span>
+</p>
+<p>
+    <span><b>Income-Share Agreement (Learn now, pay later)</b></span><br>
+    <span style="font-size: 16px;">Pay 50% of tuition fees and defer the rest into an income-share agreement. You’ll pay KES 15K every month for 5 monthly instalments. Once you graduate, you’ll be required to pay 10% of your earned income for 24 months. If you do not get a job you pay nothing! This financing plan is ONLY available to students with Bachelor’s Degree or in their final year of university i.e. students who’ll be looking for employment immediately they graduate Zindua School.</span>
+</p>
  </div>
   </body>
 </html>
